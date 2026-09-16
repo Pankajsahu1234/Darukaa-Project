@@ -1,0 +1,27 @@
+{
+  "name": "darukaa-earth-workspace",
+  "version": "1.0.0",
+  "description": "Darukaa.Earth - Geospatial Data Analytics Platform for Carbon & Biodiversity",
+  "private": true,
+  "scripts": {
+    "prepare": "husky install",
+    "lint:frontend": "cd frontend && npm run lint",
+    "lint:backend": "ruff check backend/app backend/tests",
+    "test:backend": "cd backend && pytest",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "devDependencies": {
+    "husky": "^9.1.4",
+    "lint-staged": "^15.2.7"
+  },
+  "lint-staged": {
+    "frontend/src/**/*.{ts,tsx,js,jsx,json,css}": [
+      "cd frontend && npx prettier --write",
+      "cd frontend && npx eslint --fix"
+    ],
+    "backend/**/*.py": [
+      "black",
+      "ruff check --fix"
+    ]
+  }
+}
