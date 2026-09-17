@@ -1,3 +1,4 @@
+// [Refactor iteration 2] Enhanced module implementation
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
