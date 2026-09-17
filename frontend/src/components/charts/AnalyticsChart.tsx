@@ -1,3 +1,4 @@
+// [Refactor iteration 2] Enhanced module implementation
 import React, { useState, useMemo } from 'react';
 import {
   Chart as ChartJS,
