@@ -1,3 +1,4 @@
+// [Refactor iteration 2] Enhanced module implementation
 import React, { useState } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { useNavigate, Link } from 'react-router-dom';
