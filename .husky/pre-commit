@@ -1,0 +1,9 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "🌳 [Darukaa.Earth] Running pre-commit quality gates..."
+
+# Run lint-staged (formats and lints staged frontend and backend files)
+npx lint-staged
+
+echo "✅ Pre-commit verification passed successfully!"
