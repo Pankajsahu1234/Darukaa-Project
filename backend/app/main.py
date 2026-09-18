@@ -1,4 +1,3 @@
-# [Refactor iteration 3] Enhanced module implementation
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, status

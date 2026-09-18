@@ -1,4 +1,3 @@
-// [Refactor iteration 2] Enhanced module implementation
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { authApi } from '../api/auth';
